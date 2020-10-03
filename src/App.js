@@ -2,7 +2,7 @@ import React, { useState, useCallback, Fragment } from "react";
 import "./App.css";
 import getImages from "./components/api";
 function App() {
-  const [title] = useState("Reddit Nature Search");
+  const [title] = useState("Reddit Search App");
   const [searchTerm, setSearchTerm] = useState("");
   const [loading, setLoading] = useState(false);
   const [images, setImages] = useState([]);
