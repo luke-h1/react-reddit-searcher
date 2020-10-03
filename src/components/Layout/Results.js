@@ -1,6 +1,23 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useContext } from "react";
+import RedditContext from '../reddit/redditContext'; 
+
+
+
 
 const Results = () => {
+  const redditContext = useContext(RedditContext)
+
+  const [text, setText] = useState('');
+
+  const onChange = (e) => setText(e.target.value); 
+
+
+
+
+
+
+
+
   return (
     <Fragment>
       <div className="container">
