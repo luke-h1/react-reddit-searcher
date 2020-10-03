@@ -7,7 +7,7 @@ return (
     <div className="container">
       <div className="grid-container">
         <div className="card">
-          <img src="/test.jpeg" alt="" />
+          <img src="" alt="" />
         </div>
       </div>
     </div>
