@@ -6,7 +6,6 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [loading, setLoading] = useState(false);
   const [images, setImages] = useState([]);
-
   const formSubbmited = useCallback(
     async (e) => {
       e.preventDefault();
@@ -46,17 +45,17 @@ function App() {
         />
       )}
       <div className="container">
-        <div class="grid-container">
-          <div className="card"> 
-          {images.map((thumbnail) => (
+        <div className="grid-container">
+          <div className="card">
+            {images.map((thumbnail) => (
               <img
                 key={Math.floor(Math.random(100) * 12321321)}
                 src={thumbnail}
                 alt=""
               />
             ))}
+          </div>
         </div>
-        </div> 
       </div>
     </Fragment>
   );
