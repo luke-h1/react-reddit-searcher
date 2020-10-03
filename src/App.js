@@ -46,14 +46,17 @@ function App() {
         />
       )}
       <div className="container">
-        <div className="grid-container">
-          <div className="card">
-            {images.map((thumbnail) => (
-              <img key={thumbnail} alt={searchTerm} src={thumbnail} />
+        <div class="grid-container">
+          <div className="card"> 
+          {images.map((thumbnail) => (
+              <img
+                key={Math.floor(Math.random(100) * 12321321)}
+                src={thumbnail}
+                alt=""
+              />
             ))}
-            <img src="" alt="" />
-          </div>
         </div>
+        </div> 
       </div>
     </Fragment>
   );
